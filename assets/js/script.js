@@ -8,6 +8,18 @@
   contenuto_precedente = variabile utilizzata per la stampa in una ol usata per concatenare le stringhe
 */
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
  PROCEDIMENTO
  -inizializzo array arr vuoto
@@ -59,13 +71,15 @@ arr = arr.sort();
 
 console.log(arr);
 
+j=j+1;
 
 for(i=0;i<j;i++){
   var l = arr[i];
   if(l === cognomeU){
-    var contenuto_precendente = document.getElementById('cognomi').innerHTML;
-    document.getElementById('cognomi').innerHTML = contenuto_precendente +"<li> il cognome utente che hai inserito: "+arr[i]+" si trova in posizione"+(i+1)+"</li>"; 
+    var contenuto_precendente = document.getElementById("cognomi").innerHTML;
+    document.getElementById("cognomi").innerHTML = contenuto_precendente +"<li> il cognome utente che hai inserito: "+l+" si trova in posizione"+(i+1)+"</li>"; 
   }else{
-    document.getElementById("cognomi").innerHTML = contenuto_precendente +"<li> Cognome utente: "+arr[i]+"</li>";
+    var contenuto_precendente = document.getElementById("cognomi").innerHTML;
+    document.getElementById("cognomi").innerHTML = contenuto_precendente +"<li> Cognome utente: "+l+"</li>";
   }
 }
